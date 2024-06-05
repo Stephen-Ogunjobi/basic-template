@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <style>
+        :root {
+            --font-size: 10pt;
+            --section-spacing: 15pt;
+            --font-family: 'Raleway', sans-serif;
+            --header-font-family: "PT Serif", serif;
+            --header-font-size: 12pt;
+            --line-height: 14pt;
+        }
+
+        body {
+            padding: 0;
+            font-size: var(--font-size);
+            font-family: var(--font-family);
+            letter-spacing: 0.4px;
+        }
+
+        #name {
+            text-align: center;
+            font-family: var(--header-font-family);
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            letter-spacing: 1px;
+        }
+
+        .caps {
+            font-size: 20px;
+        }
+
+        .capss {
+            font-size: 28px;
+        }
+
+        .smallheader {
+            font-size: var(--header-font-size);
+            font-family: var(--header-font-family);
+            font-weight: bold;
+            break-after: avoid-page;
+        }
+
+        .line {
+            display: flex;
+            flex-basis: content;
+        }
+
+        .beside {
+            border-bottom: 1px solid #000;
+            flex-basis: 50%;
+            flex-grow: 2;
+            flex-shrink: 2;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 0.2fr 1fr;
+            border-top: 1px solid #000;
+            margin-top: 3px;
+            gap: 10px;
+            page-break-inside: avoid;
+        }
+
+        .gridno {
+            display: grid;
+            grid-template-columns: 0.2fr 1fr;
+            margin-top: 10px;
+        }
+
+        ul {
+            padding-left: 14px;
+        }
+
+        p,
+        li {
+            word-break: break-word !important;
+            line-height: var(--line-height);
+        }
+
+        .date,
+        .context {
+            padding-top: 15px;
+        }
+
+        .position,
+        .employer,
+        .bold {
+            font-weight: bold;
+        }
+
+        .light {
+            font-weight: lighter;
+        }
+    </style>
+
+    <section id="name">
+        <h1>
+            <span class="capss">P</span>EACE <span class="capss">A</span>KANO
+        </h1>
+        <div class="contact">
+            <div> Agege, Lagos, Nigeria </div>
+            <div> 08193654893</div>
+            <div> peaceakano0@gmail.com</div>
+        </div>
+    </section>
+
+    <section class="link">
+        <div class="line">
+            <div class="smallheader one1">
+                <span class="caps">W</span>EBSITES, <span class="caps">P</span>ORTFOLIOS, <span
+                    class="caps">P</span>ROFILES
+            </div>
+            <div class="beside">
+
+            </div>
+        </div>
+        <div class="grid">
+            <div class="empty">
+
+            </div>
+            <div class="top">
+                <ul>
+                    <li>Linkedin.com/in/toluwanii</li>
+                    <li>GitHub/toluwanicareer</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="summary">
+        <div class="line">
+            <div class="smallheader">
+                <span class="caps">P</span>ROFESSIONAL <span class="caps">S</span>UMMARY
+            </div>
+
+            <div class="beside">
+
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="empty">
+
+            </div>
+            <div>
+                <P>
+                    Driven Software Engineer with a proven track recoed at Access Bank,
+                    where I enhanced software efficiency and developed scalable solutions.
+                    Expert in Javascript and SQL, I excel in troubleshooting and collaborative
+                    problem solving, significantly improving product quality and meeting tight
+                    deadlines.
+                </P>
+            </div>
+        </div>
+    </section>
+
+    <section id="skill">
+        <div class="line">
+            <div class="smallheader">
+                <span class="caps">S</span>KILLS
+            </div>
+            <div class="beside">
+
+            </div>
+        </div>
+        <div class="grid">
+            <div class="empty">
+
+            </div>
+            <div>
+
+                <ul>
+                    <li>Javascript</li>
+                    <li>React</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="work">
+
+        <div class="line">
+            <div class="smallheader">
+                <span class="caps">W</span>ORK <span class="caps">H</span>ISTORY
+            </div>
+            <div class="beside">
+
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="date"> 06/2023 to Current</div>
+            <div class="context">
+                <div class="position"> Software Engineer</div>
+                <div class="employer"> Access Bank <span class="light">- Lagos </span></div>
+                <ul>
+                    <li>
+                        Worked with software development and testing team members to
+                        design and develop robust solutipons to meet client requirements
+                        for functionality, scalability, and performance.
+                    </li>
+                    <li>
+                        Consistently met project deadlines by effectively managing
+                        time and prioritizing tasks according to importance.
+                    </li>
+                    <li>
+                        Analyzed proposed technical solutions based on computer
+                        requirements.
+                    </li>
+                    <li>
+                        Developed scalable and maintainable code, ensuring
+                        long-term stability of the software
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="gridno">
+            <div class="date"> 06/2023 to 02/2021</div>
+            <div class="context">
+                <div class="position"> Software Developer</div>
+                <div class="employer"> Access Bank <span class="light">- Lagos</span> </div>
+                <ul>
+                    <li>
+                        Worked with software development and testing team members to
+                        design and develop robust solutipons to meet client requirements
+                        for functionality, scalability, and performance.
+                    </li>
+                    <li>
+                        Consistently met project deadlines by effectively managing
+                        time and prioritizing tasks according to importance.
+                    </li>
+                    <li>
+                        Analyzed proposed technical solutions based on computer
+                        requirements.
+                    </li>
+                    <li>
+                        Developed scalable and maintainable code, ensuring
+                        long-term stability of the software
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="education">
+        <div class="line">
+            <div class="smallheader">
+                <span class="caps">E</span>DUCATION
+            </div>
+            <div class="beside">
+
+            </div>
+        </div>
+        <div class="grid">
+            <div class="date">
+                03/2021
+            </div>
+            <div class="context">
+                <div class="bold">Bachelor of Science: Engineering </div>
+                <span class="bold"> Landmark</span>- Lagos
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>
